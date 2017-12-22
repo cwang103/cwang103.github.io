@@ -1,0 +1,170 @@
+@font-face { font-family: "Dameron"; src: url('dameronexpandital.ttf'); } 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*border-style: solid;*/
+}
+
+body {
+	background-color: #202020;
+}
+
+label{ cursor:pointer; }
+input[type=checkbox]{ margin:-1px 5px 0 0; vertical-align:text-top; }
+
+
+		/*.stopPlay span::after{ content:'Playing'; }
+		.walkerController .stopPlay input:checked + span::after{ content:'Stopped'; color:red; }
+*/
+		
+/* graphics */
+.maze{  
+display:inline-block; 
+vertical-align:middle; 
+height:337px; 
+width: 330px; 
+background:url('maze.png') 0 0 no-repeat; 
+background-size: contain; 
+position:fixed; 
+z-index: 1;
+opacity: 0.5;
+right: 0;
+}
+	/* Walker */
+.walker{ 
+position:absolute; 
+z-index:2; 
+font-size:25px; 
+color:deeppink; 
+height:25px; 
+width:25px; 
+text-align:center; 
+line-height:25px; 
+margin:-93px 0 0 28px; 
+text-shadow:-6px 0px 2px rgba(0,0,0,0.3), 7px 0; 
+}
+
+
+
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+/*Video*/
+.video-wrap {
+	position: relative;
+	padding-bottom: 46.23%;
+	height: 80vh;
+	overflow: hidden;
+	width: 100%;
+	
+	
+}
+
+video {
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*Button*/
+
+menu {
+	
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 10;
+}
+#map-start {
+	display: block;
+	padding-left: -30px;
+	width: 100px;
+	height: 50px;
+	opacity: 0;
+	z-index: -1;
+	cursor: url(kartcursor.png),auto;
+}
+
+button {
+	background-color: #FD2828;
+	opacity: 0.8;
+}
+button.foo {
+	background-color: #62F435;
+	opacity: 0.8;
+}
+button:hover {
+
+}
+
+#go {
+	display: block;
+	height: 100px;
+	width: 100px;
+	position:fixed;
+	padding-top: 12px;
+	font-family: "Dameron";
+	color: #00D22E;
+	font-size: 2em;
+}
+#stop {
+	height: 100px;
+	width: 100px;
+	position:fixed;
+	padding-top: 12px;
+	display: block;
+	font-family: "Dameron";
+	color: #FD2828;
+	font-size: 2em;
+}
+
+
+/*----------Arrow------*/
+
+.arrow {
+	color: yellow;
+	animation: arrow-movement 1.9s ease-in-out infinite;
+	font-size: 3em;
+	position: relative;
+	top: -10px;
+}
+
+
+
+@keyframes arrow-movement {
+  0%   { 
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-60px);
+  }
+  100% { 
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+}
+
+
+/*nav*/
+
+
+
+.header {
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+.navbtn {
+	color: white;
+	margin-left: 30px;
+}
+

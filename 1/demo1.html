@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>video</title>
+	<meta name="description" content="">
+	<meta name="author" content="Yair Even Or">
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="xxx" />
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="../nav/nav.css">
+	<script type="text/javascript" src="../nav/nav.js"></script>
+</head>
+<body>
+	
+	<!-- Navigation -->
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <div class="overlay-content">
+		    <a href="../Home page/home.html">Home</a>
+		    <a href="#">Services</a>
+		    <a href="#">Clients</a>
+		    <a href="#">Contact</a>
+		  </div>
+	</div>
+	<div class="header"><span class="navbtn" style="font-size:30px;cursor:url(helmet.png),auto;" onclick="openNav()">&#9776;</span>
+	</div>
+	<!-- Navigation -->
+
+	<div class="main">
+
+	<div class='maze'>
+			<div class='walker'><img src="kart.png"  width="15px" height="15px"></div>
+			<object id='svgPath' data="demos/1/path.svg" width="596" height="660" type="image/svg+xml"></object>
+	</div>
+	<div class="video-wrap">
+		<video id="gopro"  src="GoKartfast_1.mp4"  type="video/mp4"></video>
+
+	<menu>
+		<div class='walkerController'>
+			
+			<span  class="arrow two">&#10094;</span>	
+			<span  class="arrow two">&#10094;</span>
+			<span  class="arrow one">&#10095;</span>	
+			<span  class="arrow one">&#10095;</span>
+			<button class="stopPlay" onclick="playPause()"><span id="go">GO</span><span id="stop">STOP</span><input id="map-start" type='checkbox' checked></button>
+			<span  class="arrow one">&#10094;</span>	
+			<span  class="arrow one">&#10094;</span>
+			<span  class="arrow two">&#10095;</span>	
+			<span  class="arrow two">&#10095;</span>
+		</div>
+	</menu>
+
+	</div>
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src='pathAnimator.js'></script>
+	<script src='demo1.js'></script>
+</body>
+</html>
